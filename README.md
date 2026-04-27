@@ -58,15 +58,11 @@ PostgreSQL
 ---
 
 ### Project Structure
-Warehouse-Retail-Sales-SQL/|
-│
-├── sql/
-│   ├── 01_setup.sql          -- Creates base table + loads raw data
-│   ├── 02_cleaning.sql       -- Cleans fields, fixes types, removes dead rows
-│   ├── 03_exploration.sql    -- Exploratory analysis + business questions
-│   ├── 04_schema.sql         -- Builds normalized relational schema
-│
-├── data/
-│   ├── warehouse_retail_sales.csv   -- Raw 307K-row dataset
-│
-├── README.md
+| File / Folder | Description |
+| --- | --- |
+| ``sql/01_setup.sql`` | Creates the base table and loads the raw 307K‑row dataset |
+| ``sql/02_cleaning.sql`` | Cleans fields, fixes data types, removes dead rows, and flags anomalies |
+| ``sql/03_exploration.sql`` | Exploratory queries answering business questions (revenue, suppliers, seasonality) |
+| ``sql/04_schema.sql`` | Builds a normalized relational schema for long‑term querying and analysis |
+| ``data/warehouse_retail_sales.csv`` | Raw wholesale + retail dataset (307,645 rows) |
+| ``README.md`` | Full project documentation, findings, and methodology |
