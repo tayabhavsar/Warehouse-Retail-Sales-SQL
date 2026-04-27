@@ -58,9 +58,15 @@ PostgreSQL
 ---
 
 ### Project Structure
-| File | Description |
-|------|-------------|
-| sql/01_setup.sql | Table creation and data import |
-| sql/02_cleaning.sql | Data validation and cleaning |
-| sql/03_exploration.sql | Business question queries |
-| sql/04_schema.sql | Normalization into 3-table schema |
+Warehouse-Retail-Sales-SQL/
+│
+├── sql/
+│   ├── 01_setup.sql
+│   ├── 02_cleaning.sql
+│   ├── 03_exploration.sql
+│   ├── 04_schema.sql
+│
+├── data/
+│   ├── warehouse_retail_sales.csv
+│
+├── README.md
